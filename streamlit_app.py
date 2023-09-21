@@ -9,6 +9,7 @@ if st.button("おみくじを引く"):
   result = random.choice(results)
   st.write(f"結果:{result}")
   if st.button("ラッキーアイテム"):
-    item = ["ダイヤ","ルビー","サファイア","マリア"]
+    items = ["ダイヤ","ルビー","サファイア","マリア"]
+    item = random.choice(items)
     st.write(f"ラッキーアイテム:{item}")
 
